@@ -1,0 +1,30 @@
+// Custom Font Sizing
+$map: (
+  'fs-xs': 10px,
+  'fs-sm': 12px,
+  'fs-md': 14px,
+  'fs-lg': 16px,
+  'fs-xl': 18px, 
+);
+
+@each $element, $size in $map {
+  .#{$element} {
+    font-size: $size !important;
+  }
+}
+
+
+// Custom Font Colors
+$colors: (
+  'fc-light-grey': $light-grey,
+  'fc-black': $black,
+  'fc-primary': $primary,
+);
+
+@each $element, $color in $colors {
+  .#{$element} {
+    color: $color !important;
+  }
+}
+
+
