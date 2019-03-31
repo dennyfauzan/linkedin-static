@@ -1,3 +1,121 @@
 #header {
   background-color: $dark-blue;
+  height: 52px;
+  .row {
+    width: 100%;
+    #logo {
+      background: $primary;
+      padding: 3px;
+      border-radius: $base-border-radius;
+      margin-right: 12px;
+      max-width: 34px;
+      max-height: 34px;
+      .logo-linkedin {
+        width: 28px;
+        height: 28px;
+      }
+    }
+    .c-search-bar {
+      max-width: 406px;
+      @media (min-width: 992px) { 
+        min-width: 406px;
+      }
+      .search-bar {
+        position: relative;
+        min-width: 100px;
+        max-width: 280px;
+        .left-icon-search {
+          position: absolute;
+          left: 8px;
+          top: 5px;
+          z-index: 2;
+        }
+        input {
+          border: none;
+          border-radius: $base-border-radius;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          padding: 0 8px 0 28px;
+          background-color: $secondary;
+          &:focus,:active {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .btn-search {
+          padding: 4px 8px;
+          border-radius: $base-border-radius;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          background-color: $secondary;
+          .icon-search {
+            width: 22px;
+            height: 22px;
+            fill: $primary;
+            opacity: 0;
+          }
+        }
+        &.active {
+          .left-icon-search {
+            display: none;
+          }
+          input {
+            background-color: #fff;
+            padding: 0 8px;
+          }
+          .btn-search {
+            background-color: #e1e9ee;
+            .icon-search {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .nav-items {
+      padding-top: 2px;
+      min-width: 658px;
+      .nav-link, .nav-icon {
+        color: $nav-items;
+      }
+      .nav-item {
+        min-width: 80px;
+        &:hover {
+          .nav-link, .nav-icon {
+            color: #fff;
+          }
+        }
+        &.me {
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            border-right: 1px solid #c7d1d8;
+            top: -7px;
+            bottom: -4px;
+            opacity: .3;
+            right: 0;
+          }
+        }
+        &.spotlight {
+          max-width: 80px;
+          text-align: center;
+        }
+        .icon-dropdown {
+          width: 24px;
+          height: 24px;
+          max-height: 18px;
+          margin-left: -3px;
+        }
+      }
+      .nav-link {
+        padding: 0;
+        margin-bottom: -1px;
+      }
+      .nav-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
 }

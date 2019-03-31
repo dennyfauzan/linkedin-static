@@ -19,6 +19,7 @@ $colors: (
   'fc-light-grey': $light-grey,
   'fc-black': $black,
   'fc-primary': $primary,
+  'fc-spotlight': $gold,
 );
 
 @each $element, $color in $colors {

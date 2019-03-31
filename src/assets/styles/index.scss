@@ -2,3 +2,7 @@
 @import './variables';
 @import './typography';
 @import './components/components.scss';
+
+body {
+  background-color: $bg-layout;
+}

@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import Header from './components/header/Header';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <h1 className="fs-sm fc-primary">Hello World</h1>
-      </div>
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route path="/" component={Header} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
