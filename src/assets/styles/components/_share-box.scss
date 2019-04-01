@@ -1,0 +1,59 @@
+.c-share-box {
+  align-items: center;
+  flex-wrap: wrap;
+  .share-box {
+    display: flex;
+    align-items: center;
+    color: #696c6f;
+    cursor: pointer;
+
+    &:hover:not(.start-post) {
+      background: $secondary-light;
+    }
+
+    &:not(.start-docs) {
+      border-right: 1px solid rgba(0,0,0,.15);
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:not(.start-post) {
+      padding: 24px;
+    }
+
+    &.start-post {
+      height: 72px;
+      padding: 16px;
+      display: flex;
+      width: 334px;
+      margin: 0;
+      font-weight: 600;
+
+      &:hover {
+        span, .icon-post {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
+
+      .icon-post {
+        margin-right: 8px;
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+  .share-box_cta {
+    padding: 12px 16px;
+    background-color: $secondary-light;
+    border-top: 1px solid rgba(0,0,0,.15);
+    span:first-child {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
