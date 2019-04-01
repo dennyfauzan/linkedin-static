@@ -4,7 +4,8 @@ $map: (
   'fs-sm': 12px,
   'fs-md': 14px,
   'fs-lg': 16px,
-  'fs-xl': 18px, 
+  'fs-xl': 18px,
+  'fs-xxl': 20px,
 );
 
 @each $element, $size in $map {
@@ -26,6 +27,23 @@ $colors: (
   .#{$element} {
     color: $color !important;
   }
+}
+
+.f-bold {
+  color: $black;
+}
+.f-bold-black {
+  font-weight: 600;
+  color: $black
+}
+.fc-primary {
+  color: $primary
+}
+.fc-light-grey {
+  color: $light-grey;
+}
+.font-medium-bold {
+  font-weight: 600;
 }
 
 

@@ -8,5 +8,29 @@ body {
 }
 
 .with-header {
-  padding-top: $header-height + 36;
+  padding-top: $header-height + 46;
 }
+
+.w-radius {
+  border-radius: $base-border-radius;
+}
+.t-radius {
+  border-top-right-radius: $base-border-radius;
+  border-top-left-radius: $base-border-radius;
+}
+
+.b-radius {
+  border-bottom-right-radius: $base-border-radius;
+  border-bottom-left-radius: $base-border-radius;
+}
+
+// Card Style
+.card-base {
+  background: #fff;
+  box-shadow: $box-shadow;
+  border-radius: $base-border-radius;
+  .with-padding {
+    padding: 12px;
+  }
+}
+

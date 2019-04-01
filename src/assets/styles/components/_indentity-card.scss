@@ -1,0 +1,42 @@
+#identity-card {
+  .profile-card {
+    padding-bottom: 16px !important;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    .profile-bg {
+      background-image: url("http://static.licdn.com/sc/h/3chad3rzxalsf65nuo7hxciac");
+      background-position: center;
+      background-size: 462px;
+      display: block;
+      height: 54px;
+      margin: -12px -12px 0;
+    }
+    .profile-photo {
+      margin-top: -38px;
+      margin-bottom: 18px;
+    }
+    .profile-name {
+      font-weight: 600;
+    }
+    .profile-headline {
+      font-size: 12px;
+      color: $light-grey;
+      margin-top: 4px;
+    }
+  }
+
+  .profile-widget {
+    .viewed-profile {
+      border-bottom: 1px solid rgba(0,0,0,.15);
+      padding-bottom: 12px;
+    }
+  }
+
+  .premium-upsell {
+    border-top: 1px solid rgba(0,0,0,.15);
+    .icon-premium {
+      fill: $gold;
+    }
+  }
+
+}
+
