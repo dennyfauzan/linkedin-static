@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import CircleImg from '../CircleImg';
 import { MdMoreHoriz } from 'react-icons/md';
+import { UserThumbnail } from '../UserThumbnail';
 
 
 export const FeedHeader = (props) => (
@@ -10,21 +9,6 @@ export const FeedHeader = (props) => (
     <span className="feed-ddown">
       <MdMoreHoriz className="icon-menu"/>
     </span>
-    <div className="usr-img">
-      <CircleImg
-        width="48px"
-        height="48px"
-        src="http://i.pravatar.cc/144"
-        alt="avatar"
-        borderWidth="0"
-      />
-    </div>
-    <div className="usr-info ml-2">
-      <Link to="/" className="usr-name fs-md fc-black font-medium-bold">
-        Denny Fauzan
-      </Link>
-      <span className="fc-light-grey fs-sm d-block">Front End Developer</span>
-      <span className="fc-light-grey fs-sm d-block">3d</span>
-    </div>
+    <UserThumbnail name={'Denny Fauzan'} headline={'Front End Developer'} time={'3d'}/>
   </div>
 )

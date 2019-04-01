@@ -1,0 +1,11 @@
+#user-thumbnail {
+  align-items: center;
+  .usr-info {
+    margin-left: 12px;
+    .usr-name {
+      &:hover {
+        color: $primary !important;
+      }
+    }
+  }
+}
