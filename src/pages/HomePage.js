@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BaseLayout } from '../components/BaseLayout';
 import { IdentityCard } from '../components/IdentityCard';
+import FeedCard from '../components/feed-card/FeedCard';
 
 class HomePage extends Component {
   render() {
@@ -10,7 +11,9 @@ class HomePage extends Component {
           <aside className="left-col col p-0">
             <IdentityCard />
           </aside>
-          <div className="feed col pl-0"></div>
+          <div className="feed col pl-0">
+            <FeedCard />
+          </div>
           <aside className="right-col col pl-0"></aside>
         </div>
       </BaseLayout>
