@@ -3,6 +3,7 @@ import { BaseLayout } from '../components/BaseLayout';
 import { IdentityCard } from '../components/IdentityCard';
 import ShareBox from '../components/ShareBox';
 import FeedCard from '../components/feed-card/FeedCard';
+import { AddToFeed } from '../components/AddToFeed';
 
 class HomePage extends Component {
   render() {
@@ -17,7 +18,9 @@ class HomePage extends Component {
             <div className="divider"></div>
             <FeedCard />
           </div>
-          <aside className="right-col col pl-0"></aside>
+          <aside className="right-col col pl-0">
+            <AddToFeed />
+          </aside>
         </div>
       </BaseLayout>
     )
