@@ -18,7 +18,7 @@ class HomePage extends Component {
             <div className="divider"></div>
             <FeedCard />
           </div>
-          <aside className="right-col col pl-0">
+          <aside className="right-col col pl-0 pr-0">
             <AddToFeed />
           </aside>
         </div>
