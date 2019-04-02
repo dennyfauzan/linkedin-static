@@ -26,14 +26,17 @@ const NavItems = ({ items }) => {
       { listItems }
       <li className="nav-item me">
         <div className="nav-link d-flex flex-column align-items-center justify-content-center">
-          <CircleImg
-            src="http://i.pravatar.cc/48"
-            alt="avatar"
-            border={true}/>
+          <Link to="/profile">
+            <CircleImg
+              src="http://i.pravatar.cc/48"
+              alt="avatar"
+              border={true}
+            />
             <div className="d-flex align-items-center justify-content-center">
               <span className="nav-title ml-1">Me</span>
               <MdArrowDropDown className="icon-dropdown" />
             </div>
+          </Link>
         </div>
       </li>
       <li className="nav-item work">

@@ -131,6 +131,15 @@
       .nav-link, .nav-icon {
         color: $nav-items;
       }
+      .nav-link {
+        a {
+          color: $nav-items;
+          &:hover {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
       .nav-item {
         min-width: 80px;
         &:hover {
