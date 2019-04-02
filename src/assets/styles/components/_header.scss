@@ -17,6 +17,7 @@
     }
     .c-search-bar {
       max-width: 406px;
+      position: relative;
       @media (min-width: 992px) { 
         min-width: 406px;
       }
@@ -77,6 +78,51 @@
             }
           }
         }
+      }
+      .search-results {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #fff;
+        width: 780px;
+        max-height: 300px;
+        overflow: auto;
+        z-index: 1020;
+        border-bottom-left-radius: $base-border-radius;
+        border-bottom-right-radius: $base-border-radius;
+        box-shadow: $box-shadow;
+        
+        .search-category {
+          .cat {
+            height: 46px;
+            display: flex;
+            align-items: center;
+            &:hover {
+              background-color: $secondary-light;
+            }
+  
+            svg {
+              width: 22px;
+              height: 22px;
+              color: $primary;
+            }
+          }
+        }
+
+        .search-recent {
+          border-top: 1px solid rgba(0,0,0,.2);
+          .recent-peoples {
+            .each-people {
+              height: 54px;
+              display: flex;
+              align-items: center;
+              &:hover {
+                background-color: $secondary-light;
+              }
+            }
+          }
+        }
+
       }
     }
     .nav-items {
