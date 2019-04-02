@@ -56,8 +56,9 @@ class SearchBar extends Component {
               <p className="fs-md ml-3 mb-0">Content</p>
             </div>
           </div>
-          <div className="search-recent">
+          <div className="search-recent position-relative">
             <p className="fs-md font-medium-bold mb-2 px-3 py-2">Recent</p>
+            <span className="fs-md font-medium-bold fc-light-grey clear-history">Clear</span>
             <div className="recent-peoples">
               { this.recentSearchPeople() }
             </div>

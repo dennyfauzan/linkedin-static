@@ -111,6 +111,15 @@
 
         .search-recent {
           border-top: 1px solid rgba(0,0,0,.2);
+          .clear-history {
+            position: absolute;
+            right: 23px;
+            top: 8px;
+            cursor: pointer;
+            &:hover {
+              background-color: rgba(0,0,0,.2);
+            }
+          }
           .recent-peoples {
             .each-people {
               height: 54px;
