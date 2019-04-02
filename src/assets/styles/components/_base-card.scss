@@ -1,0 +1,24 @@
+.base-card {
+  background: #fff;
+  box-shadow: $box-shadow;
+  border-radius: $base-border-radius;
+  h2 {
+    padding: 25px 25px 5px 25px;
+  }
+  .show-more {
+    height: 48px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-top: 1px solid rgba(0,0,0,.2);
+    margin-top: 16px;
+    padding: 0 25px;
+    text-align: center;
+    font-weight: 600;
+    color: $primary;
+    &:focus,:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

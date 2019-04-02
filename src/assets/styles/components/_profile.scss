@@ -1,0 +1,51 @@
+#profile {
+  .col-main {
+    flex: 0 0 792px;
+    max-width: 792px;
+  }
+  .col-right {
+    margin-left: 25px;
+    flex: 0 0 312px;
+    max-width: 312px;
+  }
+  .profile-background {
+    background-image: url("http://static.licdn.com/sc/h/3chad3rzxalsf65nuo7hxciac");
+    background-position: center;
+    width: 100%;
+    padding-bottom: 25%;
+  }
+
+  .profile-photo {
+    margin-left: 25px;
+    margin-top: -76px;
+  }
+
+  .profile-section {
+    padding: 25px;
+
+    .exp-usr {
+      .c-img {
+        max-width: 32px;
+        max-height: 32px;
+      }
+    }
+
+    .summary-content {
+      border-top: 1px solid rgba(0,0,0,.2);
+    }
+  }
+
+  .highlight {
+    padding: 5px 25px 0 25px;
+    .img-stack {
+      height: 48px;
+      img:first-child {
+        margin-top: -4px;
+      }
+      img:last-child {
+        align-self: flex-end;
+        margin-left: -10px;
+      }
+    }
+  }
+}

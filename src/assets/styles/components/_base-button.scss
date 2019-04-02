@@ -1,3 +1,7 @@
+.btn {
+  transition-property: background-color,box-shadow,color;
+  vertical-align: middle;
+}
 .btn-follow {
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   transition-duration: 167ms;
@@ -15,11 +19,81 @@
   max-width: 480px;
   overflow: hidden;
   outline-width: 2px;
-  transition-property: background-color,box-shadow,color;
-  vertical-align: middle;
   &:hover {
     background-color: rgba(152,216,244,.25);
     color: #006097;
     box-shadow: inset 0 0 0 2px #006097;
+  }
+}
+
+.btn-c-primary {
+  background-color: #0073b1;
+  border: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  outline-width: 2px;
+  padding: 0 24px;
+  position: relative;
+  transition-duration: 167ms;
+  transition-timing-function: cubic-bezier(0,0,.2,1);
+  &:hover {
+    background-color: #006097;
+    color: #fff;
+  }
+}
+
+.btn-c-secondary {
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #0073b1;
+  cursor: pointer;
+  font-size: 1.6rem;
+  height: 40px;
+  line-height: 40px;
+  outline-width: 2px;
+  padding: 0 24px;
+  transition-duration: 167ms;
+  transition-property: background-color,box-shadow,color;
+  transition-timing-function: cubic-bezier(0,0,.2,1);
+  vertical-align: middle;
+  box-shadow: inset 0 0 0 1px #0073b1, inset 0 0 0 2px transparent, inset 0 0 0 1px transparent;
+  &:hover {
+    background-color: rgba(152,216,244,.25);
+    color: #006097;
+    box-shadow: inset 0 0 0 1px #0073b1, inset 0 0 0 2px #006097, inset 0 0 0 1px transparent;
+  }
+}
+
+.btn-c-outline-black {
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: 167ms;
+  align-items: center;
+  color:rgba(0,0,0,.6);
+  border: 1px solid rgba(0,0,0,.6);
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  max-width: 480px;
+  overflow: hidden;
+  outline-width: 2px;
+  transition-property: background-color,box-shadow,color;
+  vertical-align: middle;
+  &:hover {
+    background-color: rgba(207, 207, 207, 0.25);
+    color: rgba(0, 0, 0, 0.75);
   }
 }

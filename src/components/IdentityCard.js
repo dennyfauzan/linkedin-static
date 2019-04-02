@@ -7,7 +7,7 @@ export const IdentityCard = (props) => {
     <div id="identity-card" className="card-base flex-column justify-content-center">
       <div className="profile-card with-padding">
         <div className="profile-bg t-radius"></div>
-        <CircleImg
+          <CircleImg
             className="profile-photo mx-auto d-block"
             src="http://i.pravatar.cc/144"
             alt="avatar"
